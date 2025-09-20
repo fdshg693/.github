@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: セキュリティ報告
+    url: https://bounty.github.com/
+    about: 脆弱性はここから（公開Issueは使わないでください）

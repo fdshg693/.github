@@ -1,0 +1,47 @@
+name: Bug Report
+description: バグ報告
+title: "[Bug] <短い説明>"
+labels: ["bug", "triage"]
+body:
+  - type: checkboxes
+    attributes:
+      label: 事前確認
+      options:
+        - label: 同様のIssueが無いことを確認しました
+          required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: 何が起きた？
+      description: 期待動作・実際・差分を具体的に
+      placeholder: 例) 期待: ..., 実際: ...
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 再現手順
+      description: できる限り最小の手順で
+      placeholder: |
+        1. ...
+        2. ...
+        3. ...
+  - type: input
+    id: version
+    attributes:
+      label: バージョン/コミット
+      placeholder: v1.2.3 または commit SHA
+  - type: textarea
+    id: env
+    attributes:
+      label: 実行環境
+      description: OS/ランタイム/ブラウザなど
+      placeholder: |
+        OS: Ubuntu 22.04
+        Node: 20.x
+        Browser: Chrome 140
+  - type: textarea
+    id: logs
+    attributes:
+      label: ログ/スタックトレース
+      render: shell
